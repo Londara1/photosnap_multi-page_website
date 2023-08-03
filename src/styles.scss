@@ -231,7 +231,8 @@
 }
 
 .features,
-.features1 {
+.features1,
+.features2 {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -258,8 +259,12 @@
   padding-top: 56px;
 }
 
+.features2 {
+  padding-top: 56px;
+  margin-bottom: 80px;
+}
+
 .footer {
-  margin-top: 80px;
   padding: 56px 60px;
   background-color: #000;
   display: flex;
@@ -316,5 +321,281 @@
     font-size: 15px;
     font-weight: 400;
     opacity: 0.5025343894958496;
+  }
+}
+
+.storiesIntro {
+  background-color: #000;
+  .moonImage {
+    width: 100%;
+  }
+
+  .storiesInfo {
+    padding: 48px 28px 48px 29px;
+  }
+
+  .monthStory {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .storyHeading {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.333px;
+    width: 314px;
+    margin-top: 16px;
+  }
+
+  .dateAuthor {
+    display: flex;
+    gap: 9px;
+    margin-top: 16px;
+
+    .date {
+      color: #fff;
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    .author {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+
+  .about {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.6000000238418579;
+  }
+
+  .readDiv {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    .readButton {
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.storyCards {
+  .storyCard1,
+  .storyCard2,
+  .storyCard3,
+  .storyCard4,
+  .storyCard5,
+  .storyCard6,
+  .storyCard7,
+  .storyCard8,
+  .storyCard9,
+  .storyCard10,
+  .storyCard11,
+  .storyCard12,
+  .storyCard13,
+  .storyCard14,
+  .storyCard15,
+  .storyCard16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 375px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/mountains.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0px 32px 40px 33px;
+
+    .date,
+    .author {
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-top: 4px;
+    }
+
+    .author {
+      margin-top: 4px;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      opacity: 0.25;
+      background: #fff;
+      margin-top: 16px;
+    }
+
+    .submitPart {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .readButton {
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+
+  .storyCard2 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/cityscapes.jpg);
+  }
+
+  .storyCard3 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/18-days-voyage.jpg);
+  }
+
+  .storyCard4 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/architecturals.jpg);
+  }
+
+  .storyCard5 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/world-tour.jpg);
+  }
+
+  .storyCard6 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/unforeseen-corners.jpg);
+  }
+
+  .storyCard7 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/king-on-africa.jpg);
+  }
+
+  .storyCard8 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/trip-to-nowhere.jpg);
+  }
+
+  .storyCard9 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/rage-of-the-sea.jpg);
+  }
+
+  .storyCard10 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/running-free.jpg);
+  }
+
+  .storyCard11 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/behind-the-waves.jpg);
+  }
+
+  .storyCard12 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/calm-waters.jpg);
+  }
+  .storyCard13 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/milky-way.jpg);
+  }
+
+  .storyCard14 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/dark-forest.jpg);
+  }
+  .storyCard15 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/somwarpet.jpg);
+  }
+
+  .storyCard16 {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0.27%,
+        rgba(0, 0, 0, 0.661222) 100%
+      ),
+      url(./assets/stories/mobile/land-of-dreams.jpg);
   }
 }
