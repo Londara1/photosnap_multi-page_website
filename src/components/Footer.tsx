@@ -9,7 +9,6 @@ import Ig from "../assets/shared/desktop/instagram.svg";
 
 const Footer: React.FC = () => (
   <>
-    {" "}
     <div className="footer">
       <img src={WhiteLogo} alt="" />
 

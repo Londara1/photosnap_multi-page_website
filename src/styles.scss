@@ -599,3 +599,133 @@
       url(./assets/stories/mobile/land-of-dreams.jpg);
   }
 }
+
+.heroImage {
+  width: 100%;
+}
+
+.featuresAboutDiv {
+  background-color: #000;
+  padding: 0px 28px 72px 29px;
+  .line {
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 51.95%,
+      #5a77ff 100%
+    );
+    margin-top: -5px;
+  }
+
+  .featuresHeading {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.333px;
+    margin-top: 66px;
+  }
+
+  .featuresAbout {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 16px;
+  }
+}
+
+.featuresCard,
+.featuresCard2,
+.featuresCard3,
+.featuresCard4,
+.featuresCard5,
+.featuresCard6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  padding: 0px 32px;
+  text-align: center;
+
+  .featureCardHeading {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 48px;
+  }
+
+  .featureCardAbout {
+    color: #000;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 16px;
+  }
+}
+
+.featuresCard2 {
+  margin-top: 56px;
+
+  .featureCardHeading {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 66px;
+  }
+}
+
+.featuresCard3,
+.featuresCard4,
+.featuresCard5,
+.featuresCard6 {
+  margin-top: 55px;
+}
+
+.inviteDiv {
+  background-image: url(./assets/shared/mobile/bg-beta.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0px 32px 64px 33px;
+  margin-top: 91px;
+
+  .line {
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 51.95%,
+      #5a77ff 100%
+    );
+  }
+
+  .inviteText {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.333px;
+    padding-top: 58px;
+    text-transform: uppercase;
+  }
+
+  .invitePart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .inviteButton {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}
