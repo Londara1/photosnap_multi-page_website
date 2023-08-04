@@ -685,7 +685,8 @@
   margin-top: 55px;
 }
 
-.inviteDiv {
+.inviteDiv,
+.inviteDivPricing {
   background-image: url(./assets/shared/mobile/bg-beta.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -728,4 +729,254 @@
     font-weight: 700;
     letter-spacing: 2px;
   }
+}
+
+.pricingIntro {
+  padding: 0px 28px 72px 29px;
+  background-color: #000;
+  .heroImage {
+    width: 100%;
+  }
+
+  .line {
+    width: 128px;
+    height: 6px;
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 51.95%,
+      #5a77ff 100%
+    );
+    margin-top: -5px;
+  }
+
+  .pricingHeading {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.333px;
+    margin-top: 66px;
+  }
+
+  .pricingAbout {
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+    margin-top: 16px;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfdfdf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 32px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  margin: 3px 0px;
+  margin-left: 5px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(30px);
+  background-color: #fff;
+}
+
+.pricePlansWrapper {
+  margin-top: 64px;
+  padding: 0px 28px;
+  .pricePlans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    .priceMonthly,
+    .priceYearly {
+      text-align: right;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    .priceYearly {
+      opacity: 0.5;
+    }
+  }
+
+  .basicPlan,
+  .proPlan,
+  .businessPlan {
+    margin-top: 40px;
+    padding: 56px 36px 40px;
+    background-color: #f5f5f5;
+
+    .basicText,
+    .proText,
+    .businessText {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    .aboutBasic,
+    .priceMonthlyText,
+    .aboutPro,
+    .aboutBusiness {
+      text-align: center;
+      font-size: 15px;
+      line-height: 25px;
+      opacity: 0.6;
+      margin-top: 18px;
+    }
+
+    .priceMonthlyText {
+      width: 100%;
+      margin-top: 0px;
+    }
+
+    .basicPrice,
+    .proPrice,
+    .businessPrice {
+      color: #000;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 4.167px;
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+
+    .claimButton {
+      margin-top: 40px;
+      padding: 12px 0px;
+      width: 100%;
+      background: #000;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 51.95%,
+      #5a77ff 100%
+    );
+    margin-top: 24px;
+  }
+
+  .proPlan {
+    background-color: #000;
+    margin-top: 0px;
+
+    .proText,
+    .aboutPro,
+    .proPrice,
+    .priceMonthlyText {
+      color: #fff;
+    }
+
+    .claimButton {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+.chartDiv {
+  margin-top: 64px;
+  padding: 0px 28px 0px 29px;
+
+  .chartHeadings {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-top: 23px;
+  }
+  .line {
+    height: 1px;
+    background-color: #000;
+    margin-top: 23px;
+  }
+
+  .plansClassified {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    padding-right: 47px;
+
+    .chartPlanTexts {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.667px;
+    }
+
+    .checkImage {
+      margin-top: 8px;
+    }
+  }
+
+  .checksDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .whiteLine {
+    height: 1px;
+    background-color: #dfdfdf;
+    margin-top: 24px;
+  }
+}
+
+.inviteDivPricing {
+  margin-top: 64px;
 }

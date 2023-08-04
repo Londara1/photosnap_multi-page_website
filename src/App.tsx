@@ -2,8 +2,9 @@ import "./styles.scss";
 import HeaderMenu from "./components/HeaderMenu";
 // import Home from "./components/Home";
 // import Stories from "./components/Stories";
+// import Features from "./components/Features";
+import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
-import Features from "./components/Features";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <HeaderMenu />
       {/* <Home /> */}
       {/* <Stories /> */}
-      <Features />
+      {/* <Features /> */}
+      <Pricing />
 
       <Footer />
     </>
