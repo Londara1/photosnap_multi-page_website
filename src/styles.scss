@@ -27,6 +27,10 @@
   position: relative;
   width: 100%;
   background-color: #fff;
+
+  .logo {
+    display: block;
+  }
 }
 
 .menu {
@@ -48,6 +52,8 @@
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2.5px;
+    background: transparent;
+    text-decoration: none;
   }
 
   .featuresLink,
@@ -87,22 +93,23 @@
   .hero {
     width: 100%;
   }
-  .line {
-    width: 128px;
-    height: 6px;
-    margin-left: 33px;
-
-    background: linear-gradient(
-      27deg,
-      #ffc593 0%,
-      #bc7198 51.95%,
-      #5a77ff 100%
-    );
-  }
 
   .illustrationTexts {
-    padding: 72px 24px 72px 33px;
+    padding: 0px 24px 72px 33px;
+
+    .line {
+      width: 128px;
+      height: 6px;
+      margin-top: -5px;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
     .heading {
+      margin-top: 66px;
       color: #fff;
       font-size: 32px;
       font-weight: 700;

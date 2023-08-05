@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/shared/desktop/logo.svg";
 import Menu from "../assets/shared/mobile/menu.svg";
 import X from "../assets/shared/mobile/close.svg";
@@ -10,14 +11,37 @@ const HeaderMenu = () => {
   return (
     <>
       <div className="header">
-        <img src={Logo} />
+        <Link to={"/"}>
+          <img src={Logo} className="logo" />
+        </Link>
+
         <img src={menu ? X : Menu} onClick={() => openMenu(!menu)} />
       </div>
 
       <div className={menu ? "menu" : "menuNone"}>
-        <button className="storiesLink">STORIES</button>
-        <button className="featuresLink">FEATURES</button>
-        <button className="pricingLink">PRICING</button>
+        <Link
+          to={"/stories"}
+          className="storiesLink"
+          onClick={() => openMenu(false)}
+        >
+          STORIES
+        </Link>
+
+        <Link
+          to={"/features"}
+          className="featuresLink"
+          onClick={() => openMenu(false)}
+        >
+          FEATURES
+        </Link>
+
+        <Link
+          to={"/pricing"}
+          className="pricingLink"
+          onClick={() => openMenu(false)}
+        >
+          PRICING
+        </Link>
 
         <div className="line"></div>
 

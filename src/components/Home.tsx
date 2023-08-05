@@ -12,9 +12,9 @@ const Home: React.FC = () => (
   <>
     <div className="illustration1">
       <img src={Hero1} className="hero" />
-      <div className="line"></div>
 
       <div className="illustrationTexts">
+        <div className="line"></div>
         <h1 className="heading">CREATE AND SHARE YOUR PHOTO STORIES.</h1>
         <p className="about">
           Photosnap is a platform for photographers and visual storytellers. We
