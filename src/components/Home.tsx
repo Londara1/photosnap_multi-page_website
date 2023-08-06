@@ -8,97 +8,116 @@ import Responsive from "../assets/features/desktop/responsive.svg";
 import Limit from "../assets/features/desktop/no-limit.svg";
 import Emb from "../assets/features/desktop/embed.svg";
 
+import HeroTablet from "../assets/home/tablet/create-and-share.jpg";
+import ComputerPictureTablet from "../assets/home/tablet/beautiful-stories.jpg";
+import Hero2Tablet from "../assets/home/tablet/designed-for-everyone.jpg";
+
 const Home: React.FC = () => (
   <>
     <div className="illustration1">
       <img src={Hero1} className="hero" />
 
-      <div className="illustrationTexts">
-        <div className="line"></div>
-        <h1 className="heading">CREATE AND SHARE YOUR PHOTO STORIES.</h1>
-        <p className="about">
-          Photosnap is a platform for photographers and visual storytellers. We
-          make it easy to share photos, tell stories and connect with others.
-        </p>
+      <div className="illustrationWrapper">
+        <div className="lineVertical"></div>
+        <div className="illustrationTexts">
+          <div className="line"></div>
+          <h1 className="heading">CREATE AND SHARE YOUR PHOTO STORIES.</h1>
+          <p className="about">
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with
+            others.
+          </p>
 
-        <div className="submitPart">
-          <button className="inviteButton">GET AN INVITE</button>
-          <img src={Arrow} />
+          <div className="submitPart">
+            <button className="inviteButton">GET AN INVITE</button>
+            <img src={Arrow} />
+          </div>
         </div>
+        <img src={HeroTablet} className="heroTablet" />
       </div>
     </div>
     <div className="illustration2">
       <img src={ComputerPicture} className="computerPicture" />
 
-      <div className="illustrationTexts">
-        <h1 className="heading">BEAUTIFUL STORIES EVERY TIME</h1>
-        <p className="about">
-          We provide design templates to ensure your stories look terrific.
-          Easily add photos, text, embed maps and media from other networks.
-          Then share your story with everyone.
-        </p>
-        <div className="submitPart">
-          <button className="inviteButton">VIEW THE STORIES</button>
-          <img src={BlackArrow} />
+      <div className="illustrationWrapper">
+        <img src={ComputerPictureTablet} className="computerPictureTablet" />
+        <div className="illustrationTexts">
+          <h1 className="heading">BEAUTIFUL STORIES EVERY TIME</h1>
+          <p className="about">
+            We provide design templates to ensure your stories look terrific.
+            Easily add photos, text, embed maps and media from other networks.
+            Then share your story with everyone.
+          </p>
+          <div className="submitPart">
+            <button className="inviteButton">VIEW THE STORIES</button>
+            <img src={BlackArrow} />
+          </div>
         </div>
       </div>
     </div>
     <div className="illustration3">
       <img src={Hero2} className="heroImage" />
 
-      <div className="illustrationTexts">
-        <h1 className="heading">DESIGNED FOR EVERYONE</h1>
-        <p className="about">
-          Photosnap can help you create stories that resonate with your
-          audience. Our tool is designed for photographers of all levels,
-          brands, businesses you name it.
-        </p>
+      <div className="illustrationWrapper">
+        <div className="illustrationTexts">
+          <h1 className="heading">DESIGNED FOR EVERYONE</h1>
+          <p className="about">
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <div className="submitPart">
+            <button className="inviteButton">VIEW THE STORIES</button>
+            <img src={BlackArrow} />
+          </div>
+        </div>
+        <img src={Hero2Tablet} alt="" />
+      </div>
+    </div>
+
+    <div className="cardsWrapper">
+      <div className="card1">
+        <h1 className="title">The Mountains</h1>
+        <p className="author">by John Appleseed</p>
+        <div className="line"></div>
+
         <div className="submitPart">
-          <button className="inviteButton">VIEW THE STORIES</button>
-          <img src={BlackArrow} />
+          <button className="readButton">READ STORY</button>
+          <img src={Arrow} />
+        </div>
+      </div>
+      <div className="card2">
+        <h1 className="title">Sunset Cityscapes</h1>
+        <p className="author">by Benjamin Cruz</p>
+        <div className="line"></div>
+
+        <div className="submitPart">
+          <button className="readButton">READ STORY</button>
+          <img src={Arrow} />
+        </div>
+      </div>
+      <div className="card3">
+        <h1 className="title">18 Days Voyage</h1>
+        <p className="author">by Alexei Borodin</p>
+        <div className="line"></div>
+
+        <div className="submitPart">
+          <button className="readButton">READ STORY</button>
+          <img src={Arrow} />
+        </div>
+      </div>
+      <div className="card4">
+        <h1 className="title">Architecturals</h1>
+        <p className="author">by Samantha Brooke</p>
+        <div className="line"></div>
+
+        <div className="submitPart">
+          <button className="readButton">READ STORY</button>
+          <img src={Arrow} />
         </div>
       </div>
     </div>
-    <div className="card1">
-      <h1 className="title">The Mountains</h1>
-      <p className="author">by John Appleseed</p>
-      <div className="line"></div>
 
-      <div className="submitPart">
-        <button className="readButton">READ STORY</button>
-        <img src={Arrow} />
-      </div>
-    </div>
-    <div className="card2">
-      <h1 className="title">Sunset Cityscapes</h1>
-      <p className="author">by Benjamin Cruz</p>
-      <div className="line"></div>
-
-      <div className="submitPart">
-        <button className="readButton">READ STORY</button>
-        <img src={Arrow} />
-      </div>
-    </div>
-    <div className="card3">
-      <h1 className="title">18 Days Voyage</h1>
-      <p className="author">by Alexei Borodin</p>
-      <div className="line"></div>
-
-      <div className="submitPart">
-        <button className="readButton">READ STORY</button>
-        <img src={Arrow} />
-      </div>
-    </div>
-    <div className="card4">
-      <h1 className="title">Architecturals</h1>
-      <p className="author">by Samantha Brooke</p>
-      <div className="line"></div>
-
-      <div className="submitPart">
-        <button className="readButton">READ STORY</button>
-        <img src={Arrow} />
-      </div>
-    </div>
     <div className="features">
       <img src={Responsive} />
 

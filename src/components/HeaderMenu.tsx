@@ -15,7 +15,16 @@ const HeaderMenu = () => {
           <img src={Logo} className="logo" />
         </Link>
 
-        <img src={menu ? X : Menu} onClick={() => openMenu(!menu)} />
+        <button className="menuLinks">STORIES</button>
+        <button className="menuLinks">FEATURES</button>
+        <button className="menuLinks">PRICING</button>
+        <button className="inviteButton">GET AN INVITE</button>
+
+        <img
+          src={menu ? X : Menu}
+          onClick={() => openMenu(!menu)}
+          className="hamburgerMenu"
+        />
       </div>
 
       <div className={menu ? "menu" : "menuNone"}>
@@ -48,7 +57,7 @@ const HeaderMenu = () => {
         <button className="inviteButton">GET AN INVITE</button>
       </div>
 
-      <div className={menu ? "blur" : ""}></div>
+      <div onClick={() => openMenu(false)} className={menu ? "blur" : ""}></div>
     </>
   );
 };

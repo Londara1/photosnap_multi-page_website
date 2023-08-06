@@ -31,6 +31,11 @@
   .logo {
     display: block;
   }
+
+  .menuLinks,
+  .inviteButton {
+    display: none;
+  }
 }
 
 .menu {
@@ -180,6 +185,10 @@
         letter-spacing: 2px;
       }
     }
+  }
+
+  .computerPictureTablet {
+    display: none;
   }
 }
 
@@ -345,6 +354,10 @@
   flex-direction: column;
   align-items: center;
 
+  .mediaDiv {
+    display: none;
+  }
+
   .socialMedia {
     margin-top: 32px;
     display: flex;
@@ -388,13 +401,17 @@
     }
   }
 
-  .copyright {
+  .mobileCopyright {
     margin-top: 34px;
     color: #fff;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
     opacity: 0.5025343894958496;
+  }
+
+  .submit {
+    display: none;
   }
 }
 
@@ -1053,4 +1070,205 @@ input:checked + .slider:before {
 
 .inviteDivPricing {
   margin-top: 64px;
+}
+
+.heroTablet,
+.lineVertical {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .header {
+    padding: 16px 40px;
+    .menuLinks {
+      border: none;
+      background-color: transparent;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: block;
+    }
+
+    .inviteButton {
+      display: block;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 12px 24px;
+    }
+  }
+
+  .illustration1,
+  .illustration2,
+  .illustration3 {
+    .hero,
+    .heroImage {
+      display: none;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .illustrationTexts {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .heading {
+        margin-top: 0;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.167px;
+        width: 387px;
+      }
+
+      .about {
+        margin-top: 21px;
+        width: 387px;
+      }
+    }
+  }
+
+  .illustrationWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .heroTablet {
+      display: block;
+    }
+
+    .lineVertical {
+      display: block;
+      width: 6px;
+      height: 304px;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
+  }
+
+  .illustration2 {
+    .computerPicture {
+      display: none;
+    }
+
+    .illustrationTexts {
+      padding-right: 54px;
+    }
+
+    .computerPictureTablet {
+      display: inline;
+    }
+  }
+
+  .illustration3 {
+    .illustrationTexts {
+      padding-left: 54px;
+    }
+  }
+
+  .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+      height: 500px;
+      background-size: 100% 579px;
+    }
+  }
+
+  .features,
+  .features1,
+  .features2 {
+    padding-top: 120px;
+
+    .aboutFeature {
+      width: 457px;
+    }
+  }
+
+  .features1,
+  .features2 {
+    padding-top: 80px;
+  }
+
+  .features2 {
+    margin-bottom: 120px;
+  }
+
+  .footer {
+    padding: 64px 40px;
+    align-items: normal;
+
+    .submitWrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .submit {
+      display: flex;
+      gap: 16px;
+
+      .inviteButton {
+        background: transparent;
+        border: none;
+        color: #fff;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+    }
+
+    .buttonDiv {
+      display: flex;
+      flex-direction: row;
+      gap: 26px;
+      margin-top: 32px;
+    }
+
+    .submitPart,
+    .socialMedia,
+    .mobileCopyright {
+      display: none;
+    }
+  }
+
+  .mediaWrapper {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    .mediaDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      .media {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .copyright {
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      opacity: 0.5025343894958496;
+    }
+  }
 }
