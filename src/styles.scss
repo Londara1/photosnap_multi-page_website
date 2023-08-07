@@ -1271,4 +1271,62 @@ input:checked + .slider:before {
       opacity: 0.5025343894958496;
     }
   }
+
+  .storiesIntro {
+    .moonImage {
+      display: none;
+    }
+
+    .storiesInfo {
+      padding: 122px 0px 122px 39px;
+      background-image: url(./assets/stories/tablet/moon-of-appalacia.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .storyHeading {
+      margin-top: 24px;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.167px;
+    }
+
+    .about {
+      width: 387px;
+    }
+  }
+
+  .storyCards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    .storyCard1,
+    .storyCard2,
+    .storyCard3,
+    .storyCard4,
+    .storyCard5,
+    .storyCard6,
+    .storyCard7,
+    .storyCard8,
+    .storyCard9,
+    .storyCard10,
+    .storyCard11,
+    .storyCard12,
+    .storyCard13,
+    .storyCard14,
+    .storyCard15,
+    .storyCard16 {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .heroImage {
+    display: none;
+  }
+
+  .featuresIntro {
+    display: flex;
+  }
 }

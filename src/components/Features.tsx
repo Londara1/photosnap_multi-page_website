@@ -6,10 +6,11 @@ import Domain from "../assets/features/desktop/custom-domain.svg";
 import Exposure from "../assets/features/desktop/boost-exposure.svg";
 import DragDrop from "../assets/features/desktop/drag-drop.svg";
 import Arrow from "../assets/shared/mobile/arrow.svg";
+import Hero2 from "../assets/features/tablet/hero.jpg";
 
 const Features: React.FC = () => (
   <>
-    <div>
+    <div className="featuresIntro">
       <img src={Hero} className="heroImage" />
 
       <div className="featuresAboutDiv">
@@ -22,6 +23,7 @@ const Features: React.FC = () => (
           stories.
         </p>
       </div>
+      <img src={Hero2} alt="" />
     </div>
 
     <div className="featuresCards">
