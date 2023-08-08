@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../assets/features/mobile/hero.jpg";
 import Responsive from "../assets/features/desktop/responsive.svg";
 import Limit from "../assets/features/desktop/no-limit.svg";
+import Embed from "../assets/features/desktop/embed.svg";
 import Domain from "../assets/features/desktop/custom-domain.svg";
 import Exposure from "../assets/features/desktop/boost-exposure.svg";
 import DragDrop from "../assets/features/desktop/drag-drop.svg";
@@ -13,6 +14,8 @@ const Features: React.FC = () => (
     <div className="featuresIntro">
       <img src={Hero} className="heroImage" />
 
+      <div className="verticalLine"></div>
+
       <div className="featuresAboutDiv">
         <div className="line"></div>
 
@@ -23,7 +26,7 @@ const Features: React.FC = () => (
           stories.
         </p>
       </div>
-      <img src={Hero2} alt="" />
+      <img src={Hero2} className="hero2" />
     </div>
 
     <div className="featuresCards">
@@ -46,7 +49,7 @@ const Features: React.FC = () => (
       </div>
 
       <div className="featuresCard3">
-        <img src={Domain} />
+        <img src={Embed} />
         <h1 className="featureCardHeading">Available to Embed</h1>
         <p className="featureCardAbout">
           Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
@@ -55,11 +58,11 @@ const Features: React.FC = () => (
       </div>
 
       <div className="featuresCard4">
-        <img src={Exposure} />
-        <h1 className="featureCardHeading">Boost Your Exposure</h1>
+        <img src={Domain} />
+        <h1 className="featureCardHeading">Custom Domain</h1>
         <p className="featureCardAbout">
-          Users that viewed your story or gallery can easily get notifed of new
-          and featured stories with our built in mailing list.
+          With Photosnap subscriptions you can host your stories on your own
+          domain. You can also remove our branding!
         </p>
       </div>
 
@@ -84,7 +87,11 @@ const Features: React.FC = () => (
 
     <div className="inviteDiv">
       <div className="line"></div>
-      <h1 className="inviteText">We’re in beta. Get your invite today!</h1>
+
+      <div className="lineTextWrapper">
+        <div className="verticalLine"></div>
+        <h1 className="inviteText">We’re in beta. Get your invite today!</h1>
+      </div>
 
       <div className="invitePart">
         <button className="inviteButton">GET AN INVITE</button>

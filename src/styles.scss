@@ -725,6 +725,7 @@
     font-weight: 400;
     line-height: 25px;
     margin-top: 16px;
+    opacity: 0.6;
   }
 }
 
@@ -1077,6 +1078,14 @@ input:checked + .slider:before {
   display: none;
 }
 
+.hero2 {
+  display: none;
+}
+
+.claimButton2 {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .hamburgerMenu {
     display: none;
@@ -1328,5 +1337,292 @@ input:checked + .slider:before {
 
   .featuresIntro {
     display: flex;
+    align-items: center;
+    background-color: #000;
+
+    .line {
+      display: none;
+    }
+
+    .featuresAboutDiv {
+      padding: 0px 0px 0px 48px;
+    }
+
+    .verticalLine {
+      width: 10px;
+      height: 144px;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
+
+    .featuresHeading {
+      margin-top: 0;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.167px;
+    }
+
+    .featuresAbout {
+      margin-top: 21px;
+      width: 387px;
+    }
+
+    .hero2 {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .featuresCards {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .featuresCard,
+  .featuresCard2 {
+    margin-top: 0px;
+  }
+
+  .featuresCard2 {
+    .featureCardHeading {
+      margin-top: 84px;
+    }
+  }
+
+  .featuresCard3,
+  .featuresCard4,
+  .featuresCard5,
+  .featuresCard6 {
+    margin-top: 81px;
+  }
+
+  .inviteDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 114px;
+    padding: 0 40px 0 0;
+    .line {
+      display: none;
+    }
+
+    .verticalLine {
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
+
+    .lineTextWrapper {
+      display: flex;
+    }
+
+    .inviteText {
+      padding: 68px 0px 68px 33px;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.167px;
+      width: 400px;
+    }
+  }
+
+  .pricingIntro {
+    padding: 0;
+    display: flex;
+
+    .line {
+      display: none;
+    }
+
+    .verticalLine {
+      width: 10px;
+      height: 144px;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
+
+    .pricingHeading {
+      margin-top: 0;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.167px;
+    }
+
+    .pricingAbout {
+      margin-top: 21px;
+    }
+
+    .pricingWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .textsDiv {
+      padding-left: 48px;
+    }
+
+    .hero2 {
+      display: block;
+    }
+  }
+
+  .pricePlansWrapper {
+    margin-top: 112px;
+
+    .basicPlan {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 48px 40px 40px;
+
+      .basicText,
+      .aboutBasic {
+        text-align: left;
+      }
+
+      .aboutBasic {
+        width: 270px;
+      }
+
+      .basicPrice {
+        margin-top: 0;
+      }
+    }
+
+    .priceTop {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .claimButton {
+      display: none;
+    }
+
+    .claimButton2 {
+      display: block;
+      margin-top: 32px;
+      background-color: #000;
+      border: none;
+      padding: 12px 41px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .proPlan {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      padding: 0px 48px 0px 0px;
+
+      .verticalLine {
+        width: 6px;
+        height: 270px;
+        background: linear-gradient(
+          27deg,
+          #ffc593 0%,
+          #bc7198 51.95%,
+          #5a77ff 100%
+        );
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .textWrapper {
+        padding-left: 34px;
+      }
+      .aboutPro {
+        width: 270px;
+      }
+
+      .planPicker {
+        padding: 12px 41px;
+        border: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .claimButton2 {
+        width: 100%;
+        display: block;
+        margin-top: 32px;
+        background-color: #fff;
+        border: none;
+        padding: 12px 41px;
+        color: #000;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .proPriceDiv {
+        margin-top: 40px;
+      }
+
+      .proPrice {
+        margin-top: 0;
+      }
+
+      .proText,
+      .aboutPro {
+        text-align: left;
+      }
+    }
+    .businessPlan {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 48px 40px 40px;
+      .priceTop {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .businessText,
+      .aboutBusiness {
+        text-align: start;
+      }
+
+      .aboutBusiness {
+        width: 270px;
+      }
+
+      .pickButton {
+        display: block;
+        margin-top: 32px;
+        background-color: #000;
+        border: none;
+        padding: 12px 41px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .businessPrice {
+        margin-top: 0px;
+      }
+    }
   }
 }
