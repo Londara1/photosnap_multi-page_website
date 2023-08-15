@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Arrow from "../assets/shared/mobile/arrow.svg";
 import WhiteLogo from "../assets/shared/mobile/whiteLogo.svg";
 import Fb from "../assets/shared/desktop/facebook.svg";
@@ -28,10 +29,18 @@ const Footer: React.FC = () => (
       </div>
 
       <div className="buttonDiv">
-        <button className="footerButton">HOME</button>
-        <button className="footerButton">STORIES</button>
-        <button className="footerButton">FEATURES</button>
-        <button className="footerButton">PRICING</button>
+        <Link to={"/"} className="footerButton">
+          HOME
+        </Link>
+        <Link to={"/stories"} className="footerButton">
+          STORIES
+        </Link>
+        <Link to={"/features"} className="footerButton">
+          FEATURES
+        </Link>
+        <Link to={"/pricing"} className="footerButton">
+          PRICING
+        </Link>
       </div>
 
       <div className="submitPart">

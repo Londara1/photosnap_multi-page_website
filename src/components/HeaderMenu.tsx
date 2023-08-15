@@ -15,9 +15,17 @@ const HeaderMenu = () => {
           <img src={Logo} className="logo" />
         </Link>
 
-        <button className="menuLinks">STORIES</button>
-        <button className="menuLinks">FEATURES</button>
-        <button className="menuLinks">PRICING</button>
+        <div className="linksWrapper">
+          <Link to={"/stories"} className="menuLinks">
+            STORIES
+          </Link>
+          <Link to={"/features"} className="menuLinks">
+            FEATURES
+          </Link>
+          <Link to={"/pricing"} className="menuLinks">
+            PRICING
+          </Link>
+        </div>
         <button className="inviteButton">GET AN INVITE</button>
 
         <img

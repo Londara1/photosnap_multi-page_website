@@ -88,7 +88,11 @@
   }
 }
 
-.menuNone {
+.heroDesktop,
+.heroWithCamera,
+.menuNone,
+.computerPictureDesktop,
+.heroCameraDesktop {
   display: none;
 }
 
@@ -137,6 +141,7 @@
       margin-top: 23px;
       align-items: center;
       gap: 18px;
+      cursor: pointer;
       .inviteButton {
         color: #ffffff;
         background-color: transparent;
@@ -144,6 +149,11 @@
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 2px;
+        cursor: pointer;
+      }
+
+      .inviteButton:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -177,12 +187,18 @@
       margin-top: 23px;
       align-items: center;
       gap: 18px;
+      cursor: pointer;
       .inviteButton {
         background-color: transparent;
         border: none;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 2px;
+        cursor: pointer;
+      }
+
+      .inviteButton:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -220,12 +236,17 @@
       margin-top: 23px;
       align-items: center;
       gap: 18px;
+      cursor: pointer;
       .inviteButton {
         background-color: transparent;
         border: none;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 2px;
+        cursor: pointer;
+      }
+      .inviteButton:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -338,6 +359,10 @@
   }
 }
 
+.hero2Desktop {
+  display: none;
+}
+
 .features1 {
   padding-top: 56px;
 }
@@ -363,6 +388,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+
     .media {
       filter: brightness(0) invert(1);
     }
@@ -376,6 +402,7 @@
     gap: 19px;
 
     .footerButton {
+      text-decoration: none;
       border: none;
       background: transparent;
       color: #fff;
@@ -383,6 +410,10 @@
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 2px;
+    }
+
+    .footerButton:hover {
+      opacity: 0.3;
     }
   }
 
@@ -472,6 +503,7 @@
     margin-top: 24px;
     display: flex;
     gap: 16px;
+    cursor: pointer;
     .readButton {
       color: #fff;
       background-color: transparent;
@@ -479,6 +511,11 @@
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .readButton:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -505,6 +542,9 @@
     justify-content: end;
     width: 100%;
     height: 375px;
+    transition: margin 0.5s ease-in-out;
+
+    cursor: pointer;
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.0001) 0.27%,
@@ -820,6 +860,11 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
+    cursor: pointer;
+  }
+
+  .inviteButton:hover {
+    text-decoration: underline;
   }
 }
 
@@ -828,6 +873,10 @@
   background-color: #000;
   .heroImage {
     width: 100%;
+  }
+
+  .hero2Desktop {
+    display: none;
   }
 
   .line {
@@ -912,6 +961,7 @@ input:checked + .slider:before {
 .pricePlansWrapper {
   margin-top: 64px;
   padding: 0px 28px;
+
   .pricePlans {
     display: flex;
     align-items: center;
@@ -919,14 +969,14 @@ input:checked + .slider:before {
     gap: 32px;
 
     .priceMonthly,
-    .priceYearly {
+    .priceActive {
       text-align: right;
       font-size: 18px;
       font-weight: 700;
       line-height: 25px;
     }
 
-    .priceYearly {
+    .priceActive {
       opacity: 0.5;
     }
   }
@@ -1024,6 +1074,9 @@ input:checked + .slider:before {
   margin-top: 64px;
   padding: 0px 28px 0px 29px;
 
+  .compareDiv {
+    display: none;
+  }
   .chartHeadings {
     color: #000;
     font-family: DM Sans;
@@ -1082,7 +1135,12 @@ input:checked + .slider:before {
   display: none;
 }
 
-.claimButton2 {
+.claimButton2,
+.pickButton {
+  display: none;
+}
+
+.forTicks {
   display: none;
 }
 
@@ -1093,13 +1151,25 @@ input:checked + .slider:before {
 
   .header {
     padding: 16px 40px;
+
+    .linksWrapper {
+      display: flex;
+      gap: 37px;
+    }
+
     .menuLinks {
       border: none;
+      color: #000;
       background-color: transparent;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 2px;
       display: block;
+      text-decoration: none;
+    }
+
+    .menuLinks:hover {
+      opacity: 0.3;
     }
 
     .inviteButton {
@@ -1111,6 +1181,12 @@ input:checked + .slider:before {
       font-weight: 700;
       letter-spacing: 2px;
       padding: 12px 24px;
+      cursor: pointer;
+    }
+
+    .inviteButton:hover {
+      background: #dfdfdf;
+      color: #000;
     }
   }
 
@@ -1152,6 +1228,14 @@ input:checked + .slider:before {
     justify-content: space-between;
     align-items: center;
 
+    .heroWithCamera {
+      display: block;
+    }
+
+    .textsWrapper {
+      display: flex;
+    }
+
     .heroTablet {
       display: block;
     }
@@ -1160,6 +1244,7 @@ input:checked + .slider:before {
       display: block;
       width: 6px;
       height: 304px;
+      margin-right: 48px;
       background: linear-gradient(
         27deg,
         #ffc593 0%,
@@ -1199,6 +1284,7 @@ input:checked + .slider:before {
     .card4 {
       height: 500px;
       background-size: 100% 579px;
+      cursor: pointer;
     }
   }
 
@@ -1270,6 +1356,9 @@ input:checked + .slider:before {
       .media {
         filter: brightness(0) invert(1);
       }
+      .media:hover {
+        filter: brightness(1);
+      }
     }
 
     .copyright {
@@ -1338,6 +1427,7 @@ input:checked + .slider:before {
   .featuresIntro {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #000;
 
     .line {
@@ -1345,11 +1435,19 @@ input:checked + .slider:before {
     }
 
     .featuresAboutDiv {
-      padding: 0px 0px 0px 48px;
+      padding: 0;
+    }
+
+    .featuresIntroWrapper {
+      display: flex;
+    }
+
+    .featuresTexts {
+      padding-left: 48px;
     }
 
     .verticalLine {
-      width: 10px;
+      width: 6px;
       height: 144px;
       background: linear-gradient(
         27deg,
@@ -1372,7 +1470,6 @@ input:checked + .slider:before {
     }
 
     .hero2 {
-      width: 100%;
       display: block;
     }
   }
@@ -1406,6 +1503,7 @@ input:checked + .slider:before {
     justify-content: space-between;
     margin-top: 114px;
     padding: 0 40px 0 0;
+
     .line {
       display: none;
     }
@@ -1432,18 +1530,23 @@ input:checked + .slider:before {
       letter-spacing: 4.167px;
       width: 400px;
     }
+
+    .invitePart {
+      margin-top: 0px;
+    }
   }
 
   .pricingIntro {
     padding: 0;
     display: flex;
+    justify-content: space-between;
 
     .line {
       display: none;
     }
 
     .verticalLine {
-      width: 10px;
+      width: 6px;
       height: 144px;
       background: linear-gradient(
         27deg,
@@ -1462,6 +1565,7 @@ input:checked + .slider:before {
 
     .pricingAbout {
       margin-top: 21px;
+      width: 387px;
     }
 
     .pricingWrapper {
@@ -1622,6 +1726,589 @@ input:checked + .slider:before {
 
       .businessPrice {
         margin-top: 0px;
+      }
+    }
+  }
+
+  .chartDiv {
+    margin-top: 112px;
+
+    .chartHeadings {
+      margin-top: 0;
+    }
+
+    .chartWrapperDiv {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 23px;
+
+      .plansClassified {
+        gap: 124px;
+        padding-right: 53px;
+        margin-top: 0;
+
+        .checkImage {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .chartPlanTexts {
+      display: none;
+    }
+
+    .chartIntroWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .forTicks {
+        display: flex;
+        gap: 105px;
+        padding-right: 10px;
+      }
+
+      .chartHeadings {
+        margin-top: 0;
+      }
+    }
+
+    .compareDiv {
+      display: flex;
+      justify-content: center;
+
+      .compare {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 4.167px;
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 16px 165px;
+  }
+
+  .illustrationWrapper {
+    .heroDesktop,
+    .computerPictureDesktop,
+    .heroCameraDesktop {
+      display: block;
+    }
+
+    .heroTablet,
+    .heroWithCamera {
+      display: none;
+    }
+
+    .lineVertical {
+      margin-right: 106px;
+    }
+
+    .computerPictureTablet {
+      display: none;
+    }
+  }
+
+  .illustration2 {
+    .illustrationTexts {
+      padding-right: 111px;
+    }
+  }
+
+  .illustration3 {
+    .illustrationTexts {
+      padding-left: 112px;
+    }
+  }
+
+  .cardsWrapper,
+  .featuresWrapper {
+    display: flex;
+  }
+
+  .cardsWrapper {
+    .card1 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(/src/assets/stories/desktop/mountains.jpg);
+    }
+
+    .card2 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(/src/assets/stories/desktop/cityscapes.jpg);
+    }
+
+    .card3 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(/src/assets/stories/desktop/18-days-voyage.jpg);
+    }
+
+    .card4 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(/src/assets/stories/desktop/architecturals.jpg);
+    }
+  }
+
+  .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+      transition: margin 0.4s ease-in-out;
+    }
+
+    .card1:hover,
+    .card2:hover,
+    .card3:hover,
+    .card4:hover {
+      transition: margin 0.5s;
+      margin-top: -25px;
+      padding: 0;
+
+      .paddingDiv {
+        padding: 0px 32px 40px 33px;
+      }
+
+      .cardUnderline {
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(
+          27deg,
+          #ffc593 0%,
+          #bc7198 51.95%,
+          #5a77ff 100%
+        );
+      }
+    }
+  }
+
+  .featuresWrapper {
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 120px;
+
+    .features,
+    .features1,
+    .features2 {
+      margin-bottom: 0;
+      padding-top: 0;
+      height: 289px;
+
+      .aboutFeature {
+        width: 350px;
+      }
+    }
+
+    .featureIconsDiv {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  .storyCards {
+    grid-template-columns: repeat(4, 25%);
+
+    .storyCard1:hover,
+    .storyCard2:hover,
+    .storyCard3:hover,
+    .storyCard4:hover,
+    .storyCard5:hover,
+    .storyCard6:hover,
+    .storyCard7:hover,
+    .storyCard8:hover,
+    .storyCard9:hover,
+    .storyCard10:hover,
+    .storyCard11:hover,
+    .storyCard12:hover,
+    .storyCard13:hover,
+    .storyCard14:hover,
+    .storyCard15:hover,
+    .storyCard16:hover {
+      margin-top: -25px;
+      padding: 0;
+      transition: margin 0.5s;
+
+      .paddingDiv {
+        padding: 0px 32px 40px 33px;
+      }
+
+      .cardUnderline {
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(
+          27deg,
+          #ffc593 0%,
+          #bc7198 51.95%,
+          #5a77ff 100%
+        );
+      }
+    }
+
+    .storyCard1 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/mountains.jpg);
+    }
+
+    .storyCard2 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/cityscapes.jpg);
+    }
+
+    .storyCard3 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/18-days-voyage.jpg);
+    }
+
+    .storyCard4 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/architecturals.jpg);
+    }
+
+    .storyCard5 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/world-tour.jpg);
+    }
+
+    .storyCard6 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/unforeseen-corners.jpg);
+    }
+
+    .storyCard7 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/king-on-africa.jpg);
+    }
+
+    .storyCard8 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/trip-to-nowhere.jpg);
+    }
+
+    .storyCard9 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/rage-of-the-sea.jpg);
+    }
+
+    .storyCard10 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/running-free.jpg);
+    }
+
+    .storyCard11 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/behind-the-waves.jpg);
+    }
+
+    .storyCard12 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/calm-waters.jpg);
+    }
+
+    .storyCard13 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/milky-way.jpg);
+    }
+
+    .storyCard14 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/dark-forest.jpg);
+    }
+
+    .storyCard15 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/somwarpet.jpg);
+    }
+
+    .storyCard16 {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.0001) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        ),
+        url(./assets/stories/desktop/land-of-dreams.jpg);
+    }
+  }
+
+  .storiesIntro {
+    .storiesInfo {
+      padding: 122px 0px 122px 112px;
+      background-image: url(./assets/stories/desktop/moon-of-appalacia.jpg);
+    }
+  }
+
+  .featuresIntro {
+    .hero2 {
+      display: none;
+    }
+
+    .hero2Desktop {
+      display: block;
+    }
+
+    .featuresTexts {
+      padding-left: 106px;
+    }
+  }
+
+  .featuresCards {
+    grid-template-columns: repeat(3, 33%);
+    row-gap: 106px;
+    justify-content: center;
+    margin-top: 160px;
+    padding: 0px 165px;
+  }
+
+  .featuresCard3,
+  .featuresCard4,
+  .featuresCard5,
+  .featuresCard6 {
+    margin-top: 0;
+  }
+
+  .inviteDiv {
+    padding: 0px 165px 0px 0px;
+    .inviteText {
+      padding: 68px 0px 68px 159px;
+      width: 530px;
+    }
+  }
+
+  .pricingIntro {
+    .hero2 {
+      display: none;
+    }
+
+    .hero2Desktop {
+      display: block;
+    }
+
+    .textsDiv {
+      padding-left: 106px;
+    }
+  }
+
+  .plansWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 48px;
+
+    .basicPlan,
+    .proPlan,
+    .businessPlan {
+      margin-top: 0px;
+      flex-direction: column;
+    }
+
+    .verticalLine {
+      display: none;
+    }
+
+    .lineDesktop {
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(
+        27deg,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%
+      );
+    }
+
+    .basicPlan {
+      padding: 56px 40px 40px 40px;
+      justify-content: unset;
+      height: 407px;
+      .basicText,
+      .aboutBasic {
+        text-align: center;
+      }
+    }
+
+    .claimButton2 {
+      display: none;
+    }
+
+    .priceDiv {
+      margin-top: 40px;
+    }
+
+    .claimButton {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .claimButton:hover {
+      background: #dfdfdf;
+      color: #000;
+    }
+
+    .proPlan {
+      padding: 0px 40px 71px 40px;
+      justify-content: unset;
+
+      .claimButton2 {
+        display: none;
+      }
+
+      .proText,
+      .aboutPro {
+        text-align: center;
+      }
+
+      .textWrapper {
+        padding-left: 0;
+        margin-top: 82px;
+      }
+    }
+
+    .businessPlan {
+      padding: 56px 40px 40px 40px;
+      justify-content: unset;
+      height: 407px;
+      .pickButton {
+        display: none;
+      }
+
+      .businessText,
+      .aboutBusiness {
+        text-align: center;
+      }
+
+      .businessPriceDiv {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .chartDiv {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wholeChart {
+      width: 731px;
+    }
+  }
+
+  .inviteDiv {
+    margin-top: 160px;
+  }
+
+  .footer {
+    padding: 64px 165px 64px 171px;
+    .buttonDiv {
+      position: absolute;
+      left: 450px;
+      flex-direction: column;
+      align-items: start;
+      margin-top: -4px;
+    }
+
+    .submit {
+      cursor: pointer;
+
+      .inviteButton:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .mediaWrapper {
+    margin-top: 86px;
+
+    .mediaDiv {
+      .media {
+        cursor: pointer;
       }
     }
   }

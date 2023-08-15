@@ -8,25 +8,29 @@ import Exposure from "../assets/features/desktop/boost-exposure.svg";
 import DragDrop from "../assets/features/desktop/drag-drop.svg";
 import Arrow from "../assets/shared/mobile/arrow.svg";
 import Hero2 from "../assets/features/tablet/hero.jpg";
+import Hero2Desktop from "../assets/features/desktop/hero.jpg";
 
 const Features: React.FC = () => (
   <>
     <div className="featuresIntro">
       <img src={Hero} className="heroImage" />
 
-      <div className="verticalLine"></div>
-
       <div className="featuresAboutDiv">
         <div className="line"></div>
-
-        <h1 className="featuresHeading">FEATURES</h1>
-        <p className="featuresAbout">
-          We make sure all of our features are designed to be loved by every
-          aspiring and even professional photograpers who wanted to share their
-          stories.
-        </p>
+        <div className="featuresIntroWrapper">
+          <div className="verticalLine"></div>
+          <div className="featuresTexts">
+            <h1 className="featuresHeading">FEATURES</h1>
+            <p className="featuresAbout">
+              We make sure all of our features are designed to be loved by every
+              aspiring and even professional photograpers who wanted to share
+              their stories.
+            </p>
+          </div>
+        </div>
       </div>
       <img src={Hero2} className="hero2" />
+      <img src={Hero2Desktop} className="hero2Desktop" />
     </div>
 
     <div className="featuresCards">
